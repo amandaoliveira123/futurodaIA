@@ -70,6 +70,6 @@ mostraPergunta();
 
     }
 
- dxcdcf}
+ }
 
 mostraPergunta();
