@@ -40,7 +40,7 @@ const perguntas = [
             "Sim, precisa de regras para evitar riscos.",
             "Não, é sempre totalmente segura."
         ]
-},
+   },
 ];
 
 let atual = 0;
@@ -50,5 +50,26 @@ function mostraPergunta() {
     perguntaAtual = perguntas [atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
+
+mostraPergunta();
+ let atual = 0;
+ let perguntaAtual;
+
+ function mostraPergunta() {
+     perguntaAtual = perguntas [atual];
+     caixaPerguntas.textContent = perguntaAtual.enunciado;
+     mostraAlternativas();
+
+ }
+
+ function mostraAlternativas() {
+   for (const alternativa of perguntaAtual.alternativas) {
+       const botaoAlternativas = document.createElement("button");
+       botaoAlternativas.textContent = alternativa;
+       caixaAlternativas.appendChild(botaoAlternativas);
+
+    }
+
+ dxcdcf}
 
 mostraPergunta();
